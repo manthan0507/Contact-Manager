@@ -1,0 +1,210 @@
+   /* width */
+   
+    ::-webkit-scrollbar {
+       width: 5px;
+   }
+   /* Track */
+   
+    ::-webkit-scrollbar-track {
+       background: #f1f1f1;
+   }
+   /* Handle */
+   
+    ::-webkit-scrollbar-thumb {
+       background: rgb(40, 120, 151);
+   }
+   /* Handle on hover */
+   
+    ::-webkit-scrollbar-thumb:hover {
+       background: rgb(40, 120, 151);
+   }
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   
+   body {
+       font-family: 'Playfair Display', serif;
+   }
+   
+   .wrapper {
+       position: relative;
+       width: 100vw;
+       height: 100vh;
+       background-color: rgb(40, 120, 151);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       z-index: 1;
+   }
+   
+   .color_primary {
+       color: rgb(40, 120, 151);
+   }
+   
+   .contact_manager::before {
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 91%;
+       top: 50%;
+       transform: translateY(-50%);
+       background-color: aliceblue;
+       left: -20px;
+       box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+       z-index: -1;
+   }
+   
+   .contact_manager::after {
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 91%;
+       top: 50%;
+       transform: translateY(-50%);
+       background-color: aliceblue;
+       box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+       right: -20px;
+       z-index: -1;
+   }
+   
+   .contact_manager {
+       position: relative;
+       width: 350px;
+       height: 550px;
+       background-color: aliceblue;
+       box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+       border-radius: 2px;
+   }
+   
+   .contact_header {
+       text-align: center;
+       padding-bottom: 10px;
+   }
+   
+   .contact_logo {
+       color: rgb(40, 120, 151);
+       padding-top: 30px;
+       padding-bottom: 20px;
+   }
+   
+   .contact_heading {
+       color: rgb(40, 120, 151);
+       letter-spacing: 5px;
+       font-size: 1.3em;
+   }
+   
+   .contact_form {
+       top: 30%;
+       transform: translateY(10%);
+       padding: 0 20px;
+       display: flex;
+       justify-content: center;
+   }
+   
+   .contact_form input {
+       width: 100%;
+       display: block;
+       margin-bottom: 15px;
+       background-color: rgb(40, 120, 151);
+       padding: 15px 20px;
+       border: none;
+       border-radius: 27px;
+       color: aliceblue;
+   }
+   
+   .button_center {
+       display: flex;
+       justify-content: center;
+       padding-bottom: 5px;
+   }
+   
+   .button {
+       background-color: aliceblue;
+       border: 2px solid rgb(40, 120, 151);
+       color: rgb(40, 120, 151);
+       padding: 10px 20px;
+       margin-top: 5px;
+       border-radius: 27px;
+   }
+   
+   input:focus {
+       outline: none;
+   }
+   
+   button:focus {
+       outline: none;
+   }
+   
+   input[type=number]::-webkit-inner-spin-button,
+   input[type=number]::-webkit-outer-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
+   }
+   
+    ::placeholder {
+       /* Chrome, Firefox, Opera, Safari 10.1+ */
+       color: aliceblue;
+       opacity: 1;
+       /* Firefox */
+   }
+   
+   .contact_body {
+       padding: 10px 20px;
+       overflow-y: scroll;
+       height: 250px;
+   }
+   
+   .contact_items {
+       display: flex;
+       align-items: center;
+       background-color: aliceblue;
+       padding: 10px 15px;
+       border-radius: 3px;
+       box-shadow: 0px 0px 10px 2px rgba(40, 120, 151, 0.1);
+       margin-top: 4px;
+       align-items: center;
+   }
+   
+   .contact_info {
+       margin-left: 10px;
+       margin-right: auto;
+   }
+   
+   a {
+       text-decoration: none;
+   }
+   
+   .button2 {
+       margin-top: 10px;
+   }
+   
+   .footer {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .footer1 {
+       margin-bottom: 25px;
+       margin-top: 18px;
+       box-shadow: 1px 0px 10px 3px rgba(40, 120, 151, 0.18);
+       padding: 17px 60px 35px 60px;
+   }
+   
+   .footer2 {
+       margin-bottom: 35px;
+       margin-top: 28%;
+       box-shadow: 1px 0px 10px 3px rgba(40, 120, 151, 0.18);
+       padding: 24px 60px 35px 60px;
+   }
+   
+   .button_script {
+       background-color: rgb(40, 120, 151);
+       border: 1px solid aliceblue;
+       color: aliceblue;
+       padding: 2px 3px;
+       border-radius: 5px;
+   }
